@@ -4,3 +4,6 @@
 A Tic Tac Toe game in pure JS.
 
 Currently in work in progress…
+
+Demo available here:
+[js-tic-tac-toe](https://morgan-jarry.github.io/js-tic-tac-toe/)
