@@ -1,0 +1,30 @@
+.tic-tac-toe {
+  height: ($square-size * 3);
+  margin: 20px auto;
+  width: ($square-size * 3);
+}
+
+.tic-tac-toe__square {
+  border: $border-color-square solid 1px;
+  float: left;
+  height: $square-size;
+  width: $square-size;
+
+  &[data-value=''] { cursor: pointer; }
+  &[data-square^='a-'] { border-top: none; }
+  &[data-square^='c-'] { border-bottom: none; }
+  &[data-square$='-1'] { border-left: none; }
+  &[data-square$='-3'] { border-right: none; }
+}
+
+.o-tag,
+.x-tag {
+  background: url('/img/o-x.png') -2px -2px;
+  display: block;
+  height: $square-size;
+  margin: 1px;
+  overflow: hidden;
+  width: $square-size;
+}
+
+.x-tag { background-position: -($square-size + 3) -2px; }

@@ -1,0 +1,8 @@
+@import 'config';
+
+// https://github.com/JohnAlbin/normalize-scss
+@import './../node_modules/normalize-scss/sass/_normalize';
+
+@import 'components';
+@import 'layout';
+@import 'typography';

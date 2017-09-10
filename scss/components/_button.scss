@@ -1,0 +1,27 @@
+.btn {
+  background: $light;
+  border-radius: 0.2rem;
+  border: 0;
+  color: $dark;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  min-width: 75px;
+  padding: 0.3rem 0.5rem;
+
+  &:hover {
+    background: darken($light, 15%);
+  }
+}
+
+.btn--success {
+  background: $green;
+
+  &:hover {
+    background: darken($green, 15%);
+  }
+}
+
+.action-container {
+  text-align: center;
+}

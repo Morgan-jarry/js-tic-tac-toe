@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=''>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='x-ua-compatible' content='ie=edge'>
+  <title>Tic Tac Toe</title>
+  <meta name='description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
+  <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png'>
+  <link rel='apple-touch-icon' href='apple-touch-icon.png'>
+  <link rel='stylesheet' href='public/css/min/application.css'>
+</head>
+<body>
+  <div class='title game-state'></div>
+  <div class='title score'>
+    {user.player} {user.score} - {computer.player} {computer.score}
+  </div>
+  <div class='tic-tac-toe'>
+    <!-- first row -->
+    <div class='tic-tac-toe__square' data-square='a-1' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='a-2' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='a-3' data-value=''></div>
+    <!-- second row -->
+    <div class='tic-tac-toe__square' data-square='b-1' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='b-2' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='b-3' data-value=''></div>
+    <!-- third row -->
+    <div class='tic-tac-toe__square' data-square='c-1' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='c-2' data-value=''></div>
+    <div class='tic-tac-toe__square' data-square='c-3' data-value=''></div>
+  </div>
+
+  <div class='action-container'>
+    <button type='button' class='btn btn--success reset'>Rejouer</button>
+    <button type='button' class='btn reset'>Reset</button>
+  </div>
+
+  <script src='js/plugins.js'></script>
+  <script src='js/tic-tac-toe.js'></script>
+</body>
+</html>
