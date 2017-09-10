@@ -35,21 +35,6 @@
       score: document.getElementsByClassName('score')[0],
     },
 
-    user: {
-      tagType: 'x',
-      player: 'user',
-      score: 0,
-      turn: false,
-    },
-
-    computer: {
-      tagType: 'o',
-      player: 'computer',
-      score: 0,
-      turn: false,
-    },
-
-    // TODO Use player instead of user or computer
     player: {
       x: {
         name: 'User',
@@ -186,7 +171,7 @@
       if (this.getAttribute('data-value')) return
       if (self.gameState === 'ended') return
 
-      self.playTag(this, self.user.tagType)
+      self.playTag(this, 'x')
       self.computerPlay()
     },
 
@@ -212,7 +197,7 @@
       // No one won
       if (availableSquares.length === 0) return
 
-      this.playTag(this.randomSquare(availableSquares), this.computer.tagType)
+      this.playTag(this.randomSquare(availableSquares), 'o')
     },
 
     randomSquare: function(squares) {
